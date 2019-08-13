@@ -1,24 +1,134 @@
 {
-  "posts": [
+  "billSponsors": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "politicianId": 1,
+      "legislativeBillId": 1
     },
     {
       "id": 2,
-      "title": "json-server",
-      "author": "typicode"
+      "politicianId": 1,
+      "legislativeBillId": 2
+    },
+    {
+      "id": 3,
+      "politicianId": 2,
+      "legislativeBillId": 1
     }
   ],
-  "comments": [
+  "legislativeBills": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "9/11 Victims Compensation Fund",
+      "interestId": 1
+    },
+    {
+      "id": 2,
+      "name": "H.R.2264 - Bear Protection Act of 2019",
+      "interestId": 2
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "interests": [
+    {
+      "id": 1,
+      "name": "Bears"
+    },
+    {
+      "id": 2,
+      "name": "First Responders"
+    }
+  ],
+  "corporationInterests": [
+    {
+      "id": 1,
+      "corporationId": 1,
+      "interestId": 1
+    },
+    {
+      "id": 2,
+      "corporationId": 1,
+      "interestId": 1
+    }
+  ],
+  "corporations": [
+    {
+      "id": 1,
+      "name": "Squirrels in the Attic"
+    },
+    {
+      "id": 2,
+      "name": "Woogiebuff"
+    },
+    {
+      "id": 3,
+      "name": "Metrodigs"
+    }
+  ],
+  "corporateDonationsToPACs": [
+    {
+      "id": 1,
+      "date": "04/13/2019",
+      "amount": "$50,000",
+      "PACId": 1,
+      "corporationId": 1
+    },
+    {
+      "id": 2,
+      "date": "01/22/2019",
+      "amount": "$335,000",
+      "PACId": 2,
+      "corporationId": 2
+    },
+    {
+      "id": 3,
+      "date": "02/07/2019",
+      "amount": "$89,750",
+      "PACId": 1,
+      "corporationId": 3
+    }
+  ],
+  "PACs": [
+    {
+      "id": 1,
+      "name": "Americans for a Better Tomorrow, Tomorrow"
+    },
+    {
+      "id": 2,
+      "name": "Bears for a Bearable Tomorrow"
+    }
+  ],
+  "PACDonationsToCandidate": [
+    {
+      "id": 1,
+      "date": "08/13/2019",
+      "amount": "$240,000",
+      "PACId": 1,
+      "politicianId": 2
+    },
+    {
+      "id": 2,
+      "date": "08/13/2019",
+      "amount": "$500",
+      "PACId": 1,
+      "politicianId": 1
+    },
+    {
+      "id": 3,
+      "date": "06/29/2019",
+      "amount": "$911,000",
+      "PACId": 1,
+      "politicianId": 2
+    }
+  ],
+  "politicians": [
+    {
+      "id": 1,
+      "name": "Stephen Colbert"
+    },
+    {
+      "id": 2,
+      "name": "Jon Stewart"
+    }
+  ]
+
 }

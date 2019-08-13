@@ -1,5 +1,17 @@
-const message = "Your Webpack application is set up and ready to go. Please start writing code."
+import API from "./data";
+import htmlRepresentations from "./factory";
+import renderToDom from "./dom";
 
-document.querySelector("#container").innerHTML = `<h1>${message}</h1>`
+const politicianContainer = document.querySelector(".politician")
 
-console.log(message)
+API.getStuff()
+.then(results => {
+    console.log(results)
+    results.forEach(result => {
+        const politicianName = result.politician.name
+        const billName = result.legislativeBill.name
+        // console.log(billName, politicianName)
+        const politicanHtml = htmlRepresentations.politicianHtmlRep(politicianName)
+        renderToDom.renderPolitician(politicanHtml)
+    })
+})
